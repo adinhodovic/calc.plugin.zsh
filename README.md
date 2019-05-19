@@ -14,21 +14,14 @@
 
 ```sh
 # Your .zshrc
-source $HOME/.oh-my-zsh/plugins/calc/calc.plugin.zsh
-```
-
-#### Via [antigen](http://antigen.sharats.me/)
-
-Add to `.zshrc` 
-```sh
-antigen bundle arzzen/calc.plugin.zsh
+source $HOME/.oh-my-zsh/plugins/calc/zshrc
 ```
 
 #### Via [zplug](https://github.com/zplug/zplug)
 
 Add to `.zshrc`
 ```sh
-zplug "arzzen/calc.plugin.zsh"
+zplug "adinhodovic/calc.plugin.zsh", use:zshrc
 ```
 
 ### Usage
@@ -84,13 +77,4 @@ root@pc:~$ = PI
 # more complex
 root@pc:~$ = "3.4+7/8-(5.94*(4*atan(1)))"
 -15.2611
-```
-
-### Plugin location
-
-```bash
-.oh-my-zsh
-└─── plugins/
-     └─── calc/
-          └─── calc.plugin.zsh
 ```
